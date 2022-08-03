@@ -1,8 +1,14 @@
 {
   "name": "types-relocation-forms",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && gulp copy"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mee3003/types-relocation-forms.git"
@@ -12,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mee3003/types-relocation-forms/issues"
   },
-  "homepage": "https://github.com/mee3003/types-relocation-forms#readme"
+  "homepage": "https://github.com/mee3003/types-relocation-forms#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }
