@@ -3,9 +3,6 @@
   "version": "1.0.11",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "build": "tsc && gulp copy"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mee3003/types-relocation-forms.git"
