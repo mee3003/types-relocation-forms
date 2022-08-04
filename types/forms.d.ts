@@ -53,7 +53,7 @@ export interface Order {
 
 export interface Service {
   id: number;
-  price: string;
+  price: number;
   unit: string;
   name: string;
   tenant: string;
@@ -67,7 +67,7 @@ export interface Packing {
   id: number;
   name: string;
   description: string;
-  price: string;
+  price: number;
   imgurl: string;
   colli: number;
   sortorder: number;
