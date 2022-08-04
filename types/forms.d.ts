@@ -57,7 +57,7 @@ export interface Service {
   unit: string;
   name: string;
   tenant: string;
-  customervisible: string;
+  customervisible: boolean;
   description: string;
   sortorder: number;
   colli: number;
