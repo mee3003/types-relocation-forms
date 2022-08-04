@@ -53,12 +53,14 @@ export interface Order {
 
 export interface Service {
   id: number;
-  name: string;
-  description: string;
   price: string;
-  colli: number;
   unit: string;
+  name: string;
+  tenant: string;
+  customervisible: string;
+  description: string;
   sortorder: number;
+  colli: number;
 }
 
 export interface Packing {
@@ -66,9 +68,10 @@ export interface Packing {
   name: string;
   description: string;
   price: string;
+  imgurl: string;
   colli: number;
-  imgUrl: string;
   sortorder: number;
+  tenant: string;
   unit: string;
 }
 
