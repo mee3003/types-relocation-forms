@@ -9,7 +9,7 @@ export interface Customer {
 }
 
 export interface Category {
-  id: string;
+  id: number;
   subtitle: string;
   name: string;
   sortorder: number;
