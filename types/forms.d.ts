@@ -16,8 +16,8 @@ export interface Category {
 }
 
 export interface Item {
-  categoryRefs: Category[];
-  categories: string[];
+  categoryRefs: string[];
+  categories: Category[];
   name: string;
   id: number;
   colli: number;
