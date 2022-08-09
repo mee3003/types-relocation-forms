@@ -35,7 +35,7 @@ export interface Order {
   from: Address;
   to: Address;
   services: Service[];
-  packing: Packing[];
+  packings: Packing[];
   items: Item[];
   kleiderbox: number;
   boxNumber: number;
