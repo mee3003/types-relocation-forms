@@ -1,13 +1,3 @@
-export interface Customer {
-  firstName: string;
-  lastName: string;
-  salutation: string;
-  company: string;
-  telNumber: string;
-  email: string;
-  costsAssumption: boolean;
-}
-
 export interface Category {
   id: number;
   subtitle: string;
@@ -27,13 +17,59 @@ export interface Item {
 }
 
 export interface Order {
-  customer: Customer;
-  date: any;
-  date_from: any;
-  date_to: any;
+  //#region customer
+  firstName: string;
+  lastName: string;
+  salutation: string;
+  company: string;
+  telNumber: string;
+  email: string;
+  costsAssumption: boolean;
+  //#endregion
+
+  //#region data
   isDateFix: boolean;
-  from: Address;
-  to: Address;
+  date: number;
+  date_from: number;
+  date_to: number;
+  //#endregion
+
+  //#region from address
+
+  from_floor: string;
+  from_isAltbau: boolean;
+  from_roomsNumber: string;
+  from_parkingSlot: boolean;
+  from_square: string;
+  from_liftType: string;
+  from_runningDistance: string;
+  from_address: string;
+  from_movementObject: string;
+  from_hasLoft: boolean;
+  from_packservice: boolean;
+  from_demontage: boolean;
+  from_stockwerke?: string[];
+  from_keller: boolean;
+  from_garage: boolean;
+  //#endregion
+
+  //#region to address
+  to_floor: string;
+  to_isAltbau: boolean;
+  to_parkingSlot: boolean;
+  to_personsNumber?: string;
+  to_liftType: string;
+  to_runningDistance: string;
+  to_address: string;
+  to_movementObject: string;
+  to_hasLoft: boolean;
+  to_packservice: boolean;
+  to_montage: boolean;
+  to_stockwerke?: string[];
+  to_keller: boolean;
+  to_garage: boolean;
+
+  //#endregion
   services: Service[];
   packings: Packing[];
   items: Item[];
@@ -45,9 +81,9 @@ export interface Order {
   expensive: boolean;
   expensiveText: string;
   bulky: boolean;
-  bulkyItems: CustomItem[];
+  bulkyItems: string;
   heavy: boolean;
-  heavyItems: CustomItem[];
+  heavyItems: string;
   customItems: CustomItem[];
 }
 
