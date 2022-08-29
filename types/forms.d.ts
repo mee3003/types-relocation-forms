@@ -57,7 +57,6 @@ export interface Order {
   to_floor: string;
   to_isAltbau: boolean;
   to_parkingSlot: boolean;
-  to_personsNumber?: string;
   to_liftType: string;
   to_runningDistance: string;
   to_address: string;
@@ -109,26 +108,6 @@ export interface Packing {
   sortorder: number;
   tenant: string;
   unit: string;
-}
-
-export interface Address {
-  floor: string;
-  isAltbau: boolean;
-  roomsNumber: string;
-  parkingSlot: boolean;
-  area: string;
-  personsNumber?: string;
-  liftType: string;
-  runningDistance: string;
-  address: string;
-  movementObject?: string;
-  hasLoft: boolean;
-  packservice: boolean;
-  demontage?: boolean;
-  montage?: boolean;
-  stockwerke?: string[];
-  keller: boolean;
-  garage: boolean;
 }
 
 export interface CustomItem {
