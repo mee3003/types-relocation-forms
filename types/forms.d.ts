@@ -24,7 +24,6 @@ export interface Order {
   company: string;
   telNumber: string;
   email: string;
-  costsAssumption: boolean;
   //#endregion
 
   //#region data
@@ -38,7 +37,6 @@ export interface Order {
 
   from_floor: string;
   from_isAltbau: boolean;
-  from_roomsNumber: string;
   from_parkingSlot: boolean;
   from_square: string;
   from_liftType: string;
